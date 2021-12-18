@@ -10,7 +10,7 @@ pipeline {
     stage('build') { 
       steps {
         echo 'Building Javascript project'
-        sh 'tar czf nanogram.tar.gz node_modules main.js package.json public LICENSE'
+        sh 'npm run build'
       }
     }
   }
